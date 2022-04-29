@@ -1,0 +1,144 @@
+03:08:58 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\mgidi\workspace\Finalproject-software\temp_xsdb_launch_script.tcl
+03:08:58 INFO  : Platform repository initialization has completed.
+03:08:58 INFO  : Registering command handlers for Vitis TCF services
+03:09:01 INFO  : XSCT server has started successfully.
+03:09:02 INFO  : plnx-install-location is set to ''
+03:09:02 INFO  : Successfully done setting XSCT server connection channel  
+03:09:02 INFO  : Successfully done query RDI_DATADIR 
+03:09:02 INFO  : Successfully done setting workspace for the tool. 
+03:10:08 INFO  : Result from executing command 'getProjects': dma_platform
+03:10:08 INFO  : Result from executing command 'getPlatforms': 
+03:19:10 INFO  : Checking for BSP changes to sync application flags for project 'dma_host'...
+03:19:10 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;dma_host;dma_host_system;dma_platform
+03:19:10 WARN  : Failed to closehw "C:/Users/mgidi/workspace/Finalproject-software/dma_platform/export/dma_platform/hw/design_1_wrapper.xsa"
+Reason: C:/Users/mgidi/workspace/Finalproject-software/dma_platform/export/dma_platform/hw/design_1_wrapper.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+03:19:10 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;dma_host;dma_host_system;dma_platform
+03:19:10 ERROR : Failed to openhw "C:/Users/mgidi/workspace/Finalproject-software/dma_platform/export/dma_platform/hw/design_1_wrapper.xsa"
+Reason: C:/Users/mgidi/workspace/Finalproject-software/dma_platform/export/dma_platform/hw/design_1_wrapper.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+03:19:10 ERROR : Failed to update application flags from BSP for 'dma_host'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+03:22:30 INFO  : Result from executing command 'getProjects': dma_platform
+03:22:30 INFO  : Result from executing command 'getPlatforms': dma_platform|C:/Users/mgidi/workspace/Finalproject-software/dma_platform/export/dma_platform/dma_platform.xpfm
+03:22:30 INFO  : Checking for BSP changes to sync application flags for project 'dma_host'...
+03:24:14 INFO  : Checking for BSP changes to sync application flags for project 'dma_host'...
+03:24:55 INFO  : Checking for BSP changes to sync application flags for project 'dma_host'...
+03:27:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:27:46 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FDA0A' is selected.
+03:27:47 INFO  : 'jtag frequency' command is executed.
+03:27:47 INFO  : Context for 'APU' is selected.
+03:27:47 INFO  : System reset is completed.
+03:27:50 INFO  : 'after 3000' command is executed.
+03:27:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FDA0A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FDA0A-13722093-0"}' command is executed.
+03:27:52 INFO  : Device configured successfully with "C:/Users/mgidi/workspace/Finalproject-software/dma_host/_ide/bitstream/design_1_wrapper.bit"
+03:27:52 INFO  : Context for 'APU' is selected.
+03:27:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/mgidi/workspace/Finalproject-software/dma_platform/export/dma_platform/hw/design_1_wrapper.xsa'.
+03:27:53 INFO  : 'configparams force-mem-access 1' command is executed.
+03:27:53 INFO  : Context for 'APU' is selected.
+03:27:53 INFO  : Sourcing of 'C:/Users/mgidi/workspace/Finalproject-software/dma_host/_ide/psinit/ps7_init.tcl' is done.
+03:28:01 INFO  : 'ps7_init' command is executed.
+03:28:01 INFO  : 'ps7_post_config' command is executed.
+03:28:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:28:02 INFO  : The application 'C:/Users/mgidi/workspace/Finalproject-software/dma_host/Debug/dma_host.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:28:03 INFO  : 'configparams force-mem-access 0' command is executed.
+03:28:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FDA0A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FDA0A-13722093-0"}
+fpga -file C:/Users/mgidi/workspace/Finalproject-software/dma_host/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mgidi/workspace/Finalproject-software/dma_platform/export/dma_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mgidi/workspace/Finalproject-software/dma_host/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mgidi/workspace/Finalproject-software/dma_host/Debug/dma_host.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:28:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:28:06 INFO  : 'con' command is executed.
+03:28:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+03:28:06 INFO  : Disconnected from the channel tcfchan#3.
+03:30:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:30:38 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FDA0A' is selected.
+03:30:39 INFO  : 'jtag frequency' command is executed.
+03:30:39 INFO  : Context for 'APU' is selected.
+03:30:40 INFO  : System reset is completed.
+03:30:43 INFO  : 'after 3000' command is executed.
+03:30:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FDA0A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FDA0A-13722093-0"}' command is executed.
+03:30:45 INFO  : Device configured successfully with "C:/Users/mgidi/workspace/Finalproject-software/dma_host/_ide/bitstream/design_1_wrapper.bit"
+03:30:45 INFO  : Context for 'APU' is selected.
+03:30:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/mgidi/workspace/Finalproject-software/dma_platform/export/dma_platform/hw/design_1_wrapper.xsa'.
+03:30:46 INFO  : 'configparams force-mem-access 1' command is executed.
+03:30:46 INFO  : Context for 'APU' is selected.
+03:30:46 INFO  : Sourcing of 'C:/Users/mgidi/workspace/Finalproject-software/dma_host/_ide/psinit/ps7_init.tcl' is done.
+03:30:56 INFO  : 'ps7_init' command is executed.
+03:30:56 INFO  : 'ps7_post_config' command is executed.
+03:30:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:30:57 INFO  : The application 'C:/Users/mgidi/workspace/Finalproject-software/dma_host/Debug/dma_host.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:30:59 INFO  : 'configparams force-mem-access 0' command is executed.
+03:30:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FDA0A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FDA0A-13722093-0"}
+fpga -file C:/Users/mgidi/workspace/Finalproject-software/dma_host/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mgidi/workspace/Finalproject-software/dma_platform/export/dma_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mgidi/workspace/Finalproject-software/dma_host/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mgidi/workspace/Finalproject-software/dma_host/Debug/dma_host.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:31:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:31:01 INFO  : 'con' command is executed.
+03:31:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+03:31:01 INFO  : Launch script is exported to file 'C:\Users\mgidi\workspace\Finalproject-software\dma_host_system\_ide\scripts\debugger_dma_host-default.tcl'
+03:32:49 INFO  : Disconnected from the channel tcfchan#4.
